@@ -1,0 +1,122 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "https://i.ibb.co.com/xn5S008/sanserveria-plant-snake-plant-the-garden-centre-1.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 22,
+    "rating": 4.7,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "A beautiful indoor plant with elegant white flowers that also improves air quality.",
+    "image": "https://i.ibb.co.com/ZzLhbvFM/Spathiphyllum-Sweet-Lauretta-24x90cm-Evi-Pot-Antique-Silver-32x29cm-1600x.webp",
+    "providerName": "GreenLeaf Nursery"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Aloe Vera",
+    "category": "Medicinal",
+    "price": 15,
+    "rating": 4.6,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "A succulent plant known for its healing properties and minimal care requirements.",
+    "image": "https://i.ibb.co.com/G49mCYbJ/aloe-og.jpg",
+    "providerName": "NatureCare Garden"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Spider Plant",
+    "category": "Air Purifier",
+    "price": 16,
+    "rating": 4.5,
+    "availableStock": 14,
+    "careLevel": "Easy",
+    "description": "A fast-growing plant that helps remove toxins from indoor air.",
+    "image": "https://i.ibb.co.com/FbLDd4yh/spider-plant-striped-leaves-800x800.webp",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Rubber Plant",
+    "category": "Decorative",
+    "price": 25,
+    "rating": 4.7,
+    "availableStock": 6,
+    "careLevel": "Medium",
+    "description": "A stylish plant with glossy leaves that adds elegance to any indoor space.",
+    "image": "https://i.ibb.co.com/7xHpm0nr/2048x1365-Rubber-plant-SEOJI250225-Houseplants232-34239b0.jpg",
+    "providerName": "Leafy Homes"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Monstera Deliciosa",
+    "category": "Decorative",
+    "price": 30,
+    "rating": 4.9,
+    "availableStock": 5,
+    "careLevel": "Medium",
+    "description": "Popular for its large split leaves, perfect for modern home decor.",
+    "image": "https://i.ibb.co.com/20My8nDM/Monstera-Deliciosa.webp",
+    "providerName": "GreenLeaf Nursery"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Boston Fern",
+    "category": "Air Purifier",
+    "price": 19,
+    "rating": 4.4,
+    "availableStock": 9,
+    "careLevel": "Medium",
+    "description": "A lush fern that helps maintain indoor humidity and purify air.",
+    "image": "https://i.ibb.co.com/V0zq69Lx/Boston-Fern-Care-Guide.webp",
+    "providerName": "NatureCare Garden"
+  },
+  {
+    "plantId": 8,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 24,
+    "rating": 4.8,
+    "availableStock": 7,
+    "careLevel": "Easy",
+    "description": "A tough plant that survives in low light and requires very little water.",
+    "image": "https://i.ibb.co.com/s96Ypp6R/Zamioculcas-zamiifolia-ZZ-Plant-6in-indoor-plant-in-deco-pot-2-1024x1024.png",
+    "providerName": "Leafy Homes"
+  },
+  {
+    "plantId": 9,
+    "plantName": "Chinese Evergreen",
+    "category": "Decorative",
+    "price": 20,
+    "rating": 4.6,
+    "availableStock": 11,
+    "careLevel": "Easy",
+    "description": "A colorful foliage plant that thrives in low to moderate light conditions.",
+    "image": "https://i.ibb.co.com/cK85nqhc/20210824100542-file-61256d3608218-61256d88b5299-61cb17eaeead4.avif",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 10,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Decorative",
+    "price": 35,
+    "rating": 5.0,
+    "availableStock": 4,
+    "careLevel": "Hard",
+    "description": "A trendy indoor tree with large violin-shaped leaves perfect for bright spaces.",
+    "image": "https://i.ibb.co.com/cK85nqhc/20210824100542-file-61256d3608218-61256d88b5299-61cb17eaeead4.avif",
+    "providerName": "GreenLeaf Nursery"
+  }
+]

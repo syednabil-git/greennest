@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Emma Green",
+    "specialty": "Indoor Plant Specialist",
+    "experience": "5+ years experience",
+    "image": "https://i.pravatar.cc/300?img=32",
+    "description": "Helps people build beautiful indoor gardens and maintain healthy plants."
+  },
+  {
+    "id": 2,
+    "name": "James Leaf",
+    "specialty": "Botany Expert",
+    "experience": "8+ years experience",
+    "image": "https://i.pravatar.cc/300?img=12",
+    "description": "Expert in plant growth and sustainable indoor plant care."
+  },
+  {
+    "id": 3,
+    "name": "Sophia Bloom",
+    "specialty": "Plant Decor Consultant",
+    "experience": "6+ years experience",
+    "image": "https://i.pravatar.cc/300?img=5",
+    "description": "Specializes in decorating homes with beautiful plant arrangements."
+  },
+  {
+    "id": 4,
+    "name": "Oliver Root",
+    "specialty": "Urban Gardening Expert",
+    "experience": "7+ years experience",
+    "image": "https://i.pravatar.cc/300?img=15",
+    "description": "Helps urban homes create sustainable green spaces."
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Living Room Green Style",
+    "description": "Add large leafy plants like Monstera or Rubber Plant to create a fresh and relaxing living space.",
+    "image": "https://i.ibb.co.com/twxRzbdX/Minimalism-with-a-Green-Twist.webp",
+    "plantsUsed": ["Monstera", "Rubber Plant", "Fiddle Leaf Fig"]
+  },
+  {
+    "id": 2,
+    "title": "Bedroom Calm Decor",
+    "description": "Place air-purifying plants near the bed to create a peaceful environment.",
+    "image": "https://i.ibb.co.com/FqKm4J5c/modern-eco-workspace-digital-nomads-sunlit-open-air-green-accents-modern-eco-workspace-digital-nomad.webp",
+    "plantsUsed": ["Snake Plant", "Peace Lily"]
+  },
+  {
+    "id": 3,
+    "title": "Workspace Green Corner",
+    "description": "Small desk plants can reduce stress and increase productivity.",
+    "image": "https://i.ibb.co.com/20HMd6NW/full-shot-woman-practicing-selfcare-23-2150396223.avif",
+    "plantsUsed": ["Succulent", "Aloe Vera"]
+  },
+  {
+    "id": 4,
+    "title": "Balcony Jungle Style",
+    "description": "Create a mini garden on your balcony with hanging plants and ferns.",
+    "image": "https://i.ibb.co.com/j9tjXXGM/Urban-Jungle-How-to-Create-a-Balcony-Oasis-min.jpg",
+    "plantsUsed": ["Fern", "Spider Plant", "Pothos"]
+  }
+]
