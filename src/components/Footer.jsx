@@ -4,46 +4,54 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    
-<footer>
-  <div className="footer px-35 py-10 bg-base-200 text-center flex justify-between items-center">
-      <div>
 
-<h2 className="font-bold text-2xl">
-🌱 GreenNest
-</h2>
+<footer className="bg-black text-white">
 
-<p>Bring nature into your home.</p>
+  <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
-</div>
+    {/* Logo Section */}
+    <div>
+      <h2 className="font-bold text-2xl mb-2">🌱 GreenNest</h2>
+      <p>Bring nature into your home.</p>
+    </div>
 
-<div>
+    {/* Quick Links */}
+    <div>
+      <h3 className="font-bold mb-3">Quick Links</h3>
 
-<span className="footer-title font-bold">Quick Links</span>
+      <div className="flex flex-col gap-2">
+        <Link className="hover:text-green-400">About</Link>
+        <Link className="hover:text-green-400">Contact</Link>
+        <Link className="hover:text-green-400">Privacy Policy</Link>
+      </div>
+    </div>
 
-<a>About</a>
-<a>Contact</a>
-<a>Privacy Policy</a>
+    {/* Social Links */}
+    <div>
+      <h3 className="font-bold mb-3">Follow us</h3>
 
-</div>
+      <div className="flex flex-col gap-2 items-center md:items-start">
 
-<div>
+        <Link className="flex items-center gap-2 hover:text-green-400">
+          <FaInstagram /> Instagram
+        </Link>
 
-<span className="footer-title font-bold">Follow us</span>
+        <Link className="flex items-center gap-2 hover:text-green-400">
+          <FaFacebook /> Facebook
+        </Link>
 
+      </div>
+    </div>
 
-<Link className='flex gap-1 items-center'><FaInstagram></FaInstagram> Instagram</Link>
-<a className='flex gap-1 items-center'> <FaFacebook></FaFacebook>Facebook</a>
-
-
-
-</div>
   </div>
- 
-<p className='text-center'>@2026 GreenNest All rights reserved.</p>
+
+  {/* Bottom copyright */}
+  <div className="border-t border-gray-700 text-center py-4 text-sm">
+    © 2026 GreenNest. All rights reserved.
+  </div>
 
 </footer>
-    
+
   )
 }
 

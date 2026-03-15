@@ -1,34 +1,34 @@
-import React, { use, useRef, useState } from 'react'
-import { FaEye, FaEyeSlash } from 'react-icons/fa'
+import React, { useContext, useRef, useState } from 'react'
+import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa'
 import { Link, useLocation, useNavigate } from 'react-router'
 import { AuthContext } from '../provider/AuthProvider'
 import { sendPasswordResetEmail } from 'firebase/auth'
-//import { auth } from '../firebase/Firebase.config'
+import { auth } from '../firebase/Firebase.config'
+
 
 const Login = () => {
+ 
   const [error, setError] = useState("")
   const [showPassword, setShowPassword] = useState(false);
   const emailRef = useRef();
-  const { signIn }= use(AuthContext);
+  const { signIn }= useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
- // console.log(location);
+ 
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-   // console.log({email, password});
+  
     signIn(email, password)
     .then((result) => {
       const user = result.user;
-      //console.log(user);
       navigate(`${location.state? location.state : "/"}`);
     })
     .catch((error) => {
-      const errorCode = error.code;
-      //const errorMessage = error.message;
-      //alert ( errorCode, errorMessage);
+      const errorCode = error.code;   
       setError(errorCode);
     });
   }
@@ -40,14 +40,14 @@ const Login = () => {
   const handleForgetPassword = () => {
     const email = emailRef.current.value;
     console.log('forget password', email )
-    sendPasswordResetEmail(email)
+    sendPasswordResetEmail(auth, email)
     .then(() => {
       alert('please check your email')
     })
     .catch()
   }
-
-  
+const {googleLogin} = useContext(AuthContext)
+ 
   return (
     <div className='flex justify-center min-h-screen items-center'>
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
@@ -82,9 +82,10 @@ const Login = () => {
 
           <button type='submit' className="btn btn-neutral mt-4">Login</button>
           <p className='font-semibold text-center pt-5'>Don't Have An Account ?{" "}  <Link className='text-secondary' 
-          to="/auth/register">Register</Link></p>
+          to="/signup">SignUp</Link></p>
         </fieldset>
       </form>
+        <button className='btn btn-primary flex justify-center' onClick={googleLogin}><FaGoogle></FaGoogle> Login with Google</button>
     </div>
     </div>
   )

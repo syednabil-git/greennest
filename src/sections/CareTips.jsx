@@ -7,7 +7,7 @@ const CareTips = () => {
   return (
     <div className='text-center mt-10 p-5'>
       <h1 className='font-bold text-3xl '>Plant Care Tips</h1>
-      <div className='grid grid-cols-3 gap-3 text-center p-2 mt-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 text-center p-2 mt-5'>
       <div className='bg-amber-100 p-10 rounded-2xl'>
         <h1 className='text-3xl font-semibold mb-3 flex justify-center gap-2'><WiDaySunny></WiDaySunny> Sunlight</h1>
         <h2>place in indirect light</h2>

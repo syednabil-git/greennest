@@ -1,23 +1,36 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useNavigation } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
-
 const AuthLayout = () => {
-  return <div className='bg-base-200 min-h-screen'>
-    <header className=' mx-auto py-4'>
-            <Navbar></Navbar>
-    </header>
-    <main className='w-11/12 mx-auto py-5'>
-    <Outlet>
 
-    </Outlet>
+  const navigation = useNavigation()
 
-    <Footer></Footer>
+  return (
+    <div className='bg-base-200 min-h-screen'>
 
-    </main>
+      <header className='mx-auto py-4'>
+        <Navbar />
+      </header>
+
+      <main className='w-11/12 mx-auto py-5'>
+
+        {
+          navigation.state === "loading" ? (
+          
+          <div className="flex justify-center items-center min-h-[60vh]">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+          ):(
+          <Outlet /> )
+        }
+
+      </main>
+
+      <Footer />
+
     </div>
-  
+  )
 }
 
-export default AuthLayout;
+export default AuthLayout

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLoaderData } from 'react-router-dom'
 
 const Plants = () => {
+  const Plants = useLoaderData()
   const [plants, setPlants] = useState([])
   
   useEffect(() => {
@@ -54,8 +55,11 @@ const Plants = () => {
   </div>
   
   <p className="">Price: ${plant.price}</p>
-   <Link to={`/plant/${plant.plantId}`}></Link>
-  <button  className="btn btn-primary p-2 mx-40 rounded-sm">View Details</button>
+   <div className="justify-center flex ">
+      <Link to={`/plant/${plant.plantId}`}>
+      <button  className="btn btn-primary p-2 justify-center flex rounded-sm">View Details</button>
+      </Link>
+    </div>
   
   </div>
   

@@ -1,22 +1,19 @@
 import { createBrowserRouter } from "react-router-dom"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
-import Register from "../pages/Register"
 import AuthLayout from "../Layouts/AuthLayout";
 import Plants from "../pages/Plants";
 import PlantDetails from "../pages/PlantDetails"
 import Profile from "../pages/Profile";
-
-
-
-
+import SignUp from "../pages/SignUp";
+import PrivateRouter from "../provider/PrivateRouter";
 
 const router = createBrowserRouter([
 
 {
 path:"/",
 element:<AuthLayout/>,
-
+loader: () => fetch("plants.json"),
 children:[
 
 {
@@ -31,8 +28,8 @@ element:<Login/>
 },
 
 {
-path:"/register",
-element:<Register/>
+path:"/signup",
+element:<SignUp/>
 },
 
 {
@@ -40,13 +37,19 @@ path:"/profile",
 element:<Profile/>
 },
 {
-path:"/plant",
+path:"/plants",
 element:<Plants/>
 },
 {
 path:"/plant/:id",
-element:<PlantDetails/>,
-loader:()=>fetch("/plants.json")
+element:(
+    <PrivateRouter>
+        <PlantDetails></PlantDetails>
+    </PrivateRouter>
+    ),
+    loader: () => fetch("plants.json")
+
+
 }
 
 
